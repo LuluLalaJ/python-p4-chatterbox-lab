@@ -11,6 +11,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [search, setSearch] = useState("");
 
+// GET REQUEST
   useEffect(() => {
     fetch("http://127.0.0.1:4000/messages")
       .then((r) => r.json())

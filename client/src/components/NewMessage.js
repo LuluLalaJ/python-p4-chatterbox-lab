@@ -6,6 +6,9 @@ function NewMessage({ currentUser, onAddMessage }) {
   function handleSubmit(e) {
     e.preventDefault();
 
+
+//POST REQUEST
+
     fetch("http://127.0.0.1:4000/messages", {
       method: "POST",
       headers: {

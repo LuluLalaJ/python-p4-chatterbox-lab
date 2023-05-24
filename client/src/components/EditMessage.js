@@ -6,6 +6,7 @@ function EditMessage({ id, body, onUpdateMessage }) {
   function handleFormSubmit(e) {
     e.preventDefault();
 
+  //PATCH REQUEST 
     fetch(`http://127.0.0.1:4000/messages/${id}`, {
       method: "PATCH",
       headers: {
